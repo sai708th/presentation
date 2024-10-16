@@ -1,1 +1,38 @@
+# Google CloudでMinecraftのサーバーを立てる
+
+## 内容
+MinecraftのサーバーをGoogle Cloudで立てたときのメモを順序立てて残します。
+話が脇道にそれることもあるかもしれないです。
+
 ## 経緯
+Overwatch2(5vs5のチーム制対戦FPSゲーム)を遊んでいると、敵がとんでもなく強くて全く勝てない日というものがあります。
+そんなときは避難先のゲームが欲しいものです。
+避難先、つまりMinecraftを*マルチで*いつでも遊べる環境を作ろうと思い立ちました。
+マイクラのプレイヤーは自分と友人数人を想定。
+
+## 注意
+このページではMinecraft(マイクラ)は統合版ではなくJava版のことを指します。
+
+## ツール選定
+マイクラサーバーと言っても実現方法はいくつかあります。
+
+1. 誰かのローカルPCでマイクラを動かして、他の参加者はオンライン接続するようにする。
+2. ラズパイにマイクラサーバーをインストールして、自宅サーバーとして稼働させる。
+3. レンタルVPSでマイクラサーバーを稼働する。
+4. クラウドサービスでサーバーを必要なときだけ動かし、マイクラサーバーを稼働させる。
+
+1は24/365で他の参加者に対応するのが難しいですし、PCトラブルが起こればサーバーを停止する必要も出てきます。
+そもそも自分のPCが24時間つけっぱなしというのが何となく気になります。
+
+2はランニングコストが低いのが魅力的ですが、
+導入コストが高いことやサーバーの性能をあとから変えることが難しいことが難点です。
+物理端末を管理が自分なので、トラブル時にメンテナンスする必要もあります。
+これは1の良くない部分を解消しきれていないとも言えます。
+(やったことないので本当にできるかわからない)
+
+3はシンプルにランニングコストが高いです。
+[参考](https://www.google.com/search?q=VPS+xserver&sca_esv=d161937f2a63904d&rlz=1C5CHFA_enJP1060JP1060&sxsrf=ADLYWIJY7ev717GIHLLXiTGpOqObezlPmw%3A1729040554559&ei=qhAPZ53vIamMvr0PpaWXkA0&ved=0ahUKEwid7LmA2pGJAxUphq8BHaXSBdIQ4dUDCA8&uact=5&oq=VPS+xserver&gs_lp=Egxnd3Mtd2l6LXNlcnAiC1ZQUyB4c2VydmVyMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHMgoQABiwAxjWBBhHSN8BUABYAHABeAGQAQCYAQCgAQCqAQC4AQPIAQCYAgGgAgSYAwCIBgGQBgqSBwExoAcA&sclient=gws-wiz-serp)
+
+4はVPSと似ているが必要なときだけサーバーを稼働することができる。
+個人的にクラウドサービスを使ってみたいという思いもあるのでこの方法を選択。
+
