@@ -82,3 +82,14 @@ VPSを高いと言っている手前これを許容することはできない�
 
 ### 料金画像
 ![cost](./costs.png)
+
+### インスタンス起動方法
+webhookからCloud Run Functionsのサービスを実行し、実装したpythonプログラムからインスタンスを起動します。  
+URLをポチるだけで起動できるので、少人数でマイクラを遊ぶという条件では十分。  
+[参考](https://www.softbank.jp/biz/blog/cloud-technology/articles/202303/cloudfunction-auto-start-stop/)
+
+### 使った言語・知識
+shell, webhook  
+java, python  
+GCP: compute engine, cloud run (functions)  
+
