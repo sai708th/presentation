@@ -66,9 +66,16 @@ c3-standard-4はvCPUx4+Memory16GBなので$0.004546 * 4 + $0.000615 * 16 = $0.02
 ### ディスク代
 インスタンスにマウントするブートディスクを作成する必要があります。  
 ディスクの種類や容量に応じて課金されます。  
+[料金](https://cloud.google.com/compute/disks-image-pricing?hl=ja)  
 
 ### 通信料
 デフォルトがプレミアムとなっていますが、スタンダードにすると月あたり200GBまで無料になります。  
-[参考](https://cloud.google.com/network-tiers/pricing?hl=ja)  
+[料金](https://cloud.google.com/network-tiers/pricing?hl=ja)  
 
+### IP代
+IPアドレスを固定すると月1500円くらいするようです。  
+VPSを高いと言っている手前これを許容することはできないです。  
+[料金](https://cloud.google.com/vpc/network-pricing?hl=ja#all-networking-pricing)  
+
+### 料金画像
 
