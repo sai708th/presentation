@@ -56,6 +56,7 @@ Compute Engineを使う上で気にしないといけない金銭コストを自
 これはGoogleが管理している計算資源の余剰分を、たまにGoogleの都合で停止するという条件のもとで格安で使わせてもらえるサービスです。  
 > Spot VM では、標準 VM のオンデマンド価格と比べて、大半のマシンタイプと GPU で 60～91% の割引という大幅な低価格を実現できます。  
 > (中略) ただし、他のタスクでリソースが必要になった場合などに、Compute Engine によって任意のタイミングで Spot VM がプリエンプトされる可能性があります。  
+
 [料金](https://cloud.google.com/spot-vms/pricing?hl=ja)  
 [マシンタイプ](https://cloud.google.com/compute/docs/machine-resource?hl=ja)  
 
