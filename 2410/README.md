@@ -78,4 +78,4 @@ VPSを高いと言っている手前これを許容することはできない�
 [料金](https://cloud.google.com/vpc/network-pricing?hl=ja#all-networking-pricing)  
 
 ### 料金画像
-
+![cost](./costs.png)
