@@ -77,5 +77,8 @@ IPアドレスを固定すると月1500円くらいするようです。
 VPSを高いと言っている手前これを許容することはできないです。  
 [料金](https://cloud.google.com/vpc/network-pricing?hl=ja#all-networking-pricing)  
 
+マイクラでマルチプレイするにはIPアドレスが必須なので、これは切実な問題です。  
+これに関しては、インスタンス起動時に自動シェルスクリプトから、DiscordのwebhookにIPアドレスを送信するという方法で対応しました。  
+
 ### 料金画像
 ![cost](./costs.png)
