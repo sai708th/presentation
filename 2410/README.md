@@ -94,6 +94,17 @@ webhookからCloud Run Functionsのサービスを実行し、実装したpython
 URLをポチるだけで起動できるので、少人数でマイクラを遊ぶという条件では十分。  
 [参考](https://www.softbank.jp/biz/blog/cloud-technology/articles/202303/cloudfunction-auto-start-stop/)
 
+## インスタンスの終了方法
+色々やり方はあるかと思いますが、
+起動時と違ってインスタンスが起動しているという点に着目して、
+cronに[シェルスクリプト](./checkMCServer.sh)を登録して3分起きに実行することにしました。
+シェルスクリプトでは、minecraft javaのコマンドlistで何人ログインしているか確認します。
+2回連続でログイン人数が0人であれば、サーバーをシャットダウンするという仕組みにしました。
+
+## バックアップ
+スナップショットスケジュールを作成して、インスタンスに適用しました。
+費用感はまだ分かっていません。
+
 ## 使った言語・知識
 shell, webhook  
 java, python  
